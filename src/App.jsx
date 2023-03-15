@@ -4,6 +4,8 @@ import Resume from "./Resume/Resume";
 import Value from "./Value/Value";
 import styles from './App.module.scss'
 import { useState, useEffect } from "react";
+import './globalStyles.scss';
+
 export default function App() {
   const [list, setList] = useState([
   ])
@@ -14,10 +16,8 @@ export default function App() {
      setList(items);
     }
   }, []);
-
-  //const section = JSON.parse(localStorage.getItem('list'))
-  // console.log(section)
-
+  
+  
   const createNewList = (description, type, value)=> {
     if(description != undefined && type != undefined && value != undefined) setList([...list, {description: description, type: type, value: Number(value)}])
     
@@ -25,9 +25,19 @@ export default function App() {
   const removeItem = (item)=>{
     setList(list.filter(itemList => item !== itemList))
   }
+  const [darkmode, setDarkmode] = useState('')
+
+  const dark = () =>{
+    if(darkmode ===''){
+      setDarkmode('dark-mode')
+    }else{
+      setDarkmode('')
+    }
+  }
+
   return (
-    <div className={styles.main}>
-      <Header/>
+    <div className={`${styles.main} ${darkmode}`}>
+      <Header dark={dark} />
       <div className={styles.app}>
         <div>
           <Form createNewList={createNewList}/>
