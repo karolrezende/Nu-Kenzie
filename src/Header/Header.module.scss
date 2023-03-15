@@ -1,7 +1,15 @@
+@import '../globalStyles.scss'; 
 .header{
     box-shadow: 0px 4px 32px -12px #00000040;
     padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     img{
         margin-left: 0.5em;
+    }
+    span{
+        font-family: $font;
+        font-weight: 700;
     }
 }
