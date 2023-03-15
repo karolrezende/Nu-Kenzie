@@ -1,0 +1,25 @@
+@import '../globalStyles.scss';
+.card{
+    font-family: $font;
+    background-color: $grey-1;
+    height: 150px;
+    border-radius: 4px;
+    border-left: 5px solid $color-secondary;
+    &__div{
+        margin: 2em;
+        h3{
+            padding-top: 1.5em;
+            font-weight: 600;
+            margin-bottom: 1em;
+        }
+        p{
+            margin-bottom: 0.5em;
+        }
+        &__but{
+            margin-top: 0.5em;
+            border-radius: 4px;
+            border: none;
+            background-color: $grey-2;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+$color-primary: #fd377e;
+$color-primary-2: #e34981;
+$color-secondary: #03b898;
+$grey-1: #f8f9fa;
+$grey-2: #e9ecef;
+$grey-3: #868e96;
+$grey-4: #212529;
+$grey-5: #121214;
+$white: #FFF;
+$background: $white;
+$font: 'Poppins', sans-serif;
+*{
+    font-family: $font;
+
+}
+.dark-mode{
+    $background: $grey-5;
+}

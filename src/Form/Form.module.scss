@@ -1,0 +1,36 @@
+@import '../globalStyles.scss';
+.form{
+    margin: 1.5em;
+    border: 1px solid $grey-2 ;
+    height: 450px;
+    form{
+        margin: 2em;
+        div{
+            margin: 1em 0;
+            label{
+                margin-bottom: 0.2em;
+                font-family: $font;
+                font-size: 16px;
+            }
+            input, select{
+                margin: 1em 0;
+                border: none;
+                background-color: $grey-2;
+                color: $grey-5;
+                padding: 14px;
+                border-radius: 4px;
+                option{
+                    width: 50px;
+                }
+            }
+            span{
+                font-size: 12px;
+                font-family: $font;
+            }
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}

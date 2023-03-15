@@ -1,0 +1,13 @@
+@import '../globalStyles.scss';
+.resume{
+    margin: 1.5em;
+    font-family: $font;
+    &__div{
+        h1{
+            margin: 2em;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 2em;
+        }
+    }
+}
